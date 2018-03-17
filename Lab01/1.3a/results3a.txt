@@ -1,0 +1,99 @@
+Po wykonaniu ilości powtórzeń wykonania danych funkcji w bibliotece, która pozwalała na uniknięcie segmentation fault otrzymujemy bardzo małe czasy działania poszczególnych funkcjonalności. Należałoby zrefaktoryzować kod programu, a następnie więcej razy wywoływać konkretne zachowanie.
+Total time to czas od początku do końca wywołania funkcji.
+User time to ilość czasu, jaką komputer poświęcił na tryb użytkownika (poza jądrem systemowym) w ciągu wykonywanego procesu.
+System time to czas, jaki komputer przeznaczył na wykonanie procesu w jądrze systemowym.
+
+
+
+without optymalization
+test_static
+Total time: 	(+0.00) s
+
+User time: 	(+0.00) s
+
+System time: 	(+0.00) s
+
+
+Total time: 	(+0.00) s
+
+User time: 	(+0.00) s
+
+System time: 	(+0.00) s
+
+
+Total time: 	(+0.00) s
+
+User time: 	(+0.00) s
+
+System time: 	(+0.00) s
+
+
+Total time: 	(+0.00) s
+
+User time: 	(+0.00) s
+
+System time: 	(+0.00) s
+
+
+test_shared
+Total time: 	(+0.00) s
+
+User time: 	(+0.00) s
+
+System time: 	(+0.00) s
+
+
+Total time: 	(+0.00) s
+
+User time: 	(+0.00) s
+
+System time: 	(+0.00) s
+
+
+Total time: 	(+0.00) s
+
+User time: 	(+0.00) s
+
+System time: 	(+0.00) s
+
+
+Total time: 	(+0.00) s
+
+User time: 	(+0.00) s
+
+System time: 	(+0.00) s
+
+
+test_dynamic
+
+Total time: 	(+0.00) s
+
+User time: 	(+0.00) s
+
+System time: 	(+0.00) s
+
+
+
+Total time: 	(+0.00) s
+
+User time: 	(+0.00) s
+
+System time: 	(+0.00) s
+
+
+
+Total time: 	(+0.00) s
+
+User time: 	(+0.00) s
+
+System time: 	(+0.00) s
+
+
+
+Total time: 	(+0.00) s
+
+User time: 	(+0.00) s
+
+System time: 	(+0.00) s
+
+

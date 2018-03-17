@@ -1,0 +1,92 @@
+without optymalization
+test_static
+Total time: 	(+0.00) s
+
+User time: 	(+0.00) s
+
+System time: 	(+0.00) s
+
+
+Total time: 	(+0.00) s
+
+User time: 	(+0.00) s
+
+System time: 	(+0.00) s
+
+
+Total time: 	(+0.00) s
+
+User time: 	(+0.00) s
+
+System time: 	(+0.00) s
+
+
+Total time: 	(+0.00) s
+
+User time: 	(+0.00) s
+
+System time: 	(+0.00) s
+
+
+test_shared
+Total time: 	(+0.00) s
+
+User time: 	(+0.00) s
+
+System time: 	(+0.00) s
+
+
+Total time: 	(+0.00) s
+
+User time: 	(+0.00) s
+
+System time: 	(+0.00) s
+
+
+Total time: 	(+0.00) s
+
+User time: 	(+0.00) s
+
+System time: 	(+0.00) s
+
+
+Total time: 	(+0.00) s
+
+User time: 	(+0.00) s
+
+System time: 	(+0.00) s
+
+
+test_dynamic
+
+Total time: 	(+0.00) s
+
+User time: 	(+0.00) s
+
+System time: 	(+0.00) s
+
+
+
+Total time: 	(+0.00) s
+
+User time: 	(+0.00) s
+
+System time: 	(+0.00) s
+
+
+
+Total time: 	(+0.00) s
+
+User time: 	(+0.00) s
+
+System time: 	(+0.00) s
+
+
+
+Total time: 	(+0.00) s
+
+User time: 	(+0.00) s
+
+System time: 	(+0.00) s
+
+
