@@ -1,0 +1,141 @@
+Łatwo zauważyć, że proces kopiowania jednego pliku do drugiego jest bardzo szybki i w podanych warunkach działania zajmuje niezauważalną część czasu (z dokładnością do części dziesięciotysięcznych sekundy).
+Dodatkowo sortowanie przez wstawianie za pomocą funkcji bibliotecznych jest na tyle szybkie, że również nie jesteśmy w stanie zauważyć czasu działania.
+Funkcje systemowe są zdecydowanie wolniejsze od pozostałych.
+Należałoby przeprowadzić więcej testów, na większych blokach pamięci w calu uzyskania jaśniejszych wniosków.
+
+Amount: 2500 	 Size: 4	
+ Sys Sorting 
+	User time:   	(+0.4200) s
+	System time: 	(+2.3300) s
+
+ Lib Sorting 
+	User time:   	(+0.0000) s
+	System time: 	(+0.0000) s
+
+ Sys Copying 
+	User time:   	(+0.0000) s
+	System time: 	(+0.0000) s
+
+ Lib Copying 
+	User time:   	(+0.0000) s
+	System time: 	(+0.0000) s
+
+Amount: 5000 	 Size: 4	
+ Sys Sorting 
+	User time:   	(+1.7700) s
+	System time: 	(+7.6600) s
+
+ Lib Sorting 
+	User time:   	(+0.0000) s
+	System time: 	(+0.0000) s
+
+ Sys Copying 
+	User time:   	(+0.0000) s
+	System time: 	(+0.0000) s
+
+ Lib Copying 
+	User time:   	(+0.0000) s
+	System time: 	(+0.0000) s
+
+Amount: 2500 	 Size: 512	
+ Sys Sorting 
+	User time:   	(+0.4300) s
+	System time: 	(+1.9000) s
+
+ Lib Sorting 
+	User time:   	(+0.0000) s
+	System time: 	(+0.0000) s
+
+ Sys Copying 
+	User time:   	(+0.0000) s
+	System time: 	(+0.0000) s
+
+ Lib Copying 
+	User time:   	(+0.0000) s
+	System time: 	(+0.0000) s
+
+Amount: 5000 	 Size: 512	
+ Sys Sorting 
+	User time:   	(+1.7500) s
+	System time: 	(+7.5800) s
+
+ Lib Sorting 
+	User time:   	(+0.0000) s
+	System time: 	(+0.0100) s
+
+ Sys Copying 
+	User time:   	(+0.0000) s
+	System time: 	(+0.0000) s
+
+ Lib Copying 
+	User time:   	(+0.0000) s
+	System time: 	(+0.0000) s
+
+Amount: 1000 	 Size: 4096	
+ Sys Sorting 
+	User time:   	(+0.0700) s
+	System time: 	(+0.3500) s
+
+ Lib Sorting 
+	User time:   	(+0.0000) s
+	System time: 	(+0.0000) s
+
+ Sys Copying 
+	User time:   	(+0.0000) s
+	System time: 	(+0.0000) s
+
+ Lib Copying 
+	User time:   	(+0.0000) s
+	System time: 	(+0.0000) s
+
+Amount: 2000 	 Size: 4096	
+ Sys Sorting 
+	User time:   	(+0.2600) s
+	System time: 	(+1.6100) s
+
+ Lib Sorting 
+	User time:   	(+0.0000) s
+	System time: 	(+0.0000) s
+
+ Sys Copying 
+	User time:   	(+0.0000) s
+	System time: 	(+0.0000) s
+
+ Lib Copying 
+	User time:   	(+0.0000) s
+	System time: 	(+0.0000) s
+
+Amount: 500 	 Size: 8192	
+ Sys Sorting 
+	User time:   	(+0.0100) s
+	System time: 	(+0.1500) s
+
+ Lib Sorting 
+	User time:   	(+0.0000) s
+	System time: 	(+0.0000) s
+
+ Sys Copying 
+	User time:   	(+0.0000) s
+	System time: 	(+0.0000) s
+
+ Lib Copying 
+	User time:   	(+0.0000) s
+	System time: 	(+0.0000) s
+
+Amount: 1000 	 Size: 8192	
+ Sys Sorting 
+	User time:   	(+0.0400) s
+	System time: 	(+0.6000) s
+
+ Lib Sorting 
+	User time:   	(+0.0000) s
+	System time: 	(+0.0000) s
+
+ Sys Copying 
+	User time:   	(+0.0000) s
+	System time: 	(+0.0000) s
+
+ Lib Copying 
+	User time:   	(+0.0000) s
+	System time: 	(+0.0000) s
+
