@@ -36,8 +36,7 @@ int main(int argc, char ** argv)
 	int amount_of_records, size_of_records, sysHandle,sysHandleTo;
 	FILE *libHandle1=NULL, *libHandle2=NULL;
 	operation = argv[1];
-
-	run_time = calloc(1,sizeof(struct tms));	
+	
 	run_time=(struct tms*)malloc(sizeof(struct tms));
   	times(run_time);
 
@@ -147,7 +146,7 @@ int main(int argc, char ** argv)
 		{	
 			file1=argv[2];
 			file2=argv[3];
-			if((libHandle1=fopen(file1, "r+"))==NULL){
+			if((libHandle1=fopen(file1, "r"))==NULL){
 				printf("Argument no. 2 is invalid file name!");
 				return 0;
 			}
@@ -176,15 +175,15 @@ int main(int argc, char ** argv)
 						printf("Argument no. 6 is invalid file source[1]");
 						return 0;
 					}
-					if((libHandle2=fopen(file1, "w"))==NULL)
+					if((libHandle2=fopen(file1, "w+"))==NULL)
 					{		
 						printf("Argument no. 6 is invalid file source[2]");
 						return 0;
 					}
 					else
-					{		
+					{	
 						libHandle1=fopen(file1, "r");
-						libHandle2=fopen(file2, "w");
+						libHandle2=fopen(file2, "w+");
 					}
 				}
 				else if(!strcmp(lib_sys, "sys"))
@@ -318,8 +317,8 @@ char buffer[size_of_records];
 int i;
 for(i=0;i<amount_of_records;i++)
 {
-	read(*sysHandle, buffer, size_of_records);
-	write(*sysHandleTo, buffer, size_of_records);
+	read(*sysHandle, buffer, i*size_of_records);
+	write(*sysHandleTo, buffer, i*size_of_records);
 }
 close(*sysHandle);
 close(*sysHandleTo);

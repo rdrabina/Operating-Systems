@@ -1,0 +1,8 @@
+ls -l
+mkdir directory
+./time
+touch file.c
+ls -l
+echo hehe
+du -sh
+34234asa

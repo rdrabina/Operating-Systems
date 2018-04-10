@@ -1,0 +1,9 @@
+rmdir directory
+ls -l
+mkdir directory
+./memory
+touch file.c
+ls -l
+echo hehe
+du -sh
+34234asa

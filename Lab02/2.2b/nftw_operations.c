@@ -33,7 +33,7 @@ int main(int argc, char ** argv)
 	index--;
 	if(directory[index]=='/') directory[index]='\0';
 	
-	if(argv[1][0]!='/')
+	if(directory[index]!='/')
 	{
 		char cwd[500];
 		if(getcwd(cwd,sizeof(cwd)) ==NULL) printf("Cannot get cwd");

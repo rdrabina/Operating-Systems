@@ -139,3 +139,12 @@ Amount: 1000 	 Size: 8192
 	User time:   	(+0.0000) s
 	System time: 	(+0.0000) s
 
+Amount: 2500 	 Size: 4	
+ Sys Sorting 
+	User time:   	(+0.4000) s
+	System time: 	(+1.7400) s
+
+ Lib Sorting 
+	User time:   	(+0.0000) s
+	System time: 	(+0.0000) s
+
