@@ -1,0 +1,6 @@
+mkdir directory
+ls -l | tail -5 
+ls -l | grep ma
+ps aux | head -10 | tr kwi kra 
+ps aux | head -10 | tr kwi kra | wc -l
+

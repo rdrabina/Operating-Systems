@@ -21,8 +21,8 @@ int main(int argc, char ** argv)
 	
 	
 	int status = 0, process_number = 0;
-	char buffer[100];
-	char *programs[100];	
+	char buffer[200];
+	char *programs[10];	
 
 	FILE * file = fopen(argv[1], "r");
 	if(file == NULL) 
@@ -32,12 +32,12 @@ int main(int argc, char ** argv)
 	}
 	
 
-	while(fgets(buffer,SIZE_OF_LINE-1, file) != NULL)
+	while(fgets(buffer,200, file) != NULL)
 	{
 		process_number = parseProgram(buffer, programs);
 		pid_t pid = fork();
 
-		if(pid == 0)
+		if(!pid)
 		{
 			forkBuilder(programs, process_number - 1);
 		}
@@ -69,11 +69,11 @@ return 0;
 int parseArguments(char * buffer, char ** tokens)
 {
 	int size = 0;	
-	char *tmp = strtok(buffer, " ");
+	char *tmp = strtok(buffer, " \n");
 	while(tmp!=NULL)
 	{
 		tokens[size++]= tmp;
-		tmp = strtok(NULL, "\n\t");
+		tmp = strtok(NULL, " \n");
 	}
 	
 	tokens[size] = NULL;
@@ -95,7 +95,7 @@ return size - 1;
 
 int forkBuilder(char ** programs, int size)
 {
-	char *args[100];
+	char *args[200];
 	int tab[2]={0,0};
 	int status = 0;
 
@@ -109,11 +109,11 @@ int forkBuilder(char ** programs, int size)
 		printf("Cannot fork");
 		exit(1);
 	}
-	else if(pid == 0) // children
+	else if(pid == 0) // child
 	{
 		int child = 0;
 		close(tab[0]);
-		dup2(fd[1], STDOUT_FILENO);
+		dup2(tab[1], STDOUT_FILENO);
 
 		if (size > 1) child = forkBuilder(programs, size - 1);
 		else if (size > 0) 
@@ -154,16 +154,16 @@ int forkBuilder(char ** programs, int size)
 		
 			if(!succeed)
 			{
-				printf("Failed: %d\n", getpid();
+				printf("Failed: %d\n", getpid());
 				exit(1);
 			}
+			exit(0);
 		}
 		else
 		{		
 			printf("Failed: %d\n", pid);
 			exit(1);
 		}
-		exit(0);
 	}
 
 }
